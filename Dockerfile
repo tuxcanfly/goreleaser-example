@@ -1,3 +1,3 @@
 FROM scratch
-COPY example /usr/bin/example
-ENTRYPOINT ["/usr/bin/example"]
+COPY goreleaser-example /usr/bin/goreleaser-example
+ENTRYPOINT ["/usr/bin/goreleaser-example"]
