@@ -9,7 +9,7 @@ builds:
       - amd64
       - arm64
 dockers:
-- image_templates: ["ghcr.io/goreleaser/example:{{ .Version }}"]
+- image_templates: ["ghcr.io/tuxcanfly/goreleaser-example:{{ .Version }}"]
   dockerfile: Dockerfile
   build_flag_templates:
   - --label=org.opencontainers.image.title={{ .ProjectName }}
@@ -21,7 +21,7 @@ dockers:
   - --label=org.opencontainers.image.revision={{ .FullCommit }}
   - --label=org.opencontainers.image.licenses=MIT
 nfpms:
-- maintainer: Javed Khan <javed.ma@gmail.com>
+- maintainer: Javed Khan <tuxcanfly@gmail.com>
   description: goreleaser example project.
   homepage: https://github.com/tuxcanfly/goreleaser-example
   license: MIT
