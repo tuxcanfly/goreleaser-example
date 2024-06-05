@@ -1,3 +1,3 @@
-module github.com/goreleaser/example
+module github.com/tuxcanfly/goreleaser-example
 
 go 1.19
